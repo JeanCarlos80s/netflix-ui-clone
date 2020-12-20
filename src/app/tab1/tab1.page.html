@@ -1,17 +1,102 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="netflix-dark">
     <ion-title>
-      Tab 1
+      <img class="logo-header" src="assets/netflix-logo.png" alt="">
     </ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="tv-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <img class="img-intro" src="assets/bright-netflix.jpg">
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-button expand="full" color="netflix-dark" (click)="openMovie()">
+    Assista agora
+  </ion-button>
+
+  <p class="box-title">Minha lista</p>
+
+  <div class="scroll-box">
+    <div class="movie">
+      <img src="assets/m1.jpg">
+    </div>
+    <div class="movie">
+      <img src="assets/m2.jpg">
+    </div>
+    <div class="movie">
+      <img src="assets/m3.jpg">
+    </div>
+    <div class="movie">
+      <img src="assets/m4.jpg">
+    </div>
+    <div class="movie">
+      <img src="assets/m5.jpg">
+    </div>
+    <div class="movie">
+      <img src="assets/m6.jpg">
+    </div>
+    <div class="movie">
+      <img src="assets/m7.jpg">
+    </div>
+    <div class="movie">
+      <img src="assets/m9.jpg">
+    </div>
+  </div>
+  
+  <p class="box-title">Selecionado para você</p>
+
+  <div class="scroll-box">
+    <div class="movie">
+      <img src="assets/select-for-you-1.jpg">
+    </div>
+    <div class="movie">
+      <img src="assets/select-for-you-2.jpg">
+    </div>
+    <div class="movie">
+      <img src="assets/select-for-you-3.jpg">
+    </div>
+    <div class="movie">
+      <img src="assets/select-for-you-4.jpg">
+    </div>
+    <div class="movie">
+      <img src="assets/select-for-you-5.jpg">
+    </div>
+    <div class="movie">
+      <img src="assets/select-for-you-6.jpg">
+    </div>
+    <div class="movie">
+      <img src="assets/select-for-you-7.jpg">
+    </div>
+  </div>
+  
+  <p class="box-title">Os maiores sucessos da Netflix</p>
+
+  <div class="scroll-box">
+    <div class="movie">
+      <img src="assets/best-1.jpg">
+    </div>
+    <div class="movie">
+      <img src="assets/best-2.jpg">
+    </div>
+    <div class="movie">
+      <img src="assets/best-3.jpg">
+    </div>
+    <div class="movie">
+      <img src="assets/best-4.jpg">
+    </div>
+    <div class="movie">
+      <img src="assets/best-5.jpg">
+    </div>
+    <div class="movie">
+      <img src="assets/best-6.jpg">
+    </div>
+    <div class="movie">
+      <img src="assets/best-7.jpg">
+    </div>
+  </div>
 </ion-content>
